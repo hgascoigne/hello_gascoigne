@@ -1,0 +1,65 @@
+.button,
+button {
+	background: none;
+	border: $border-width solid $color-secondary;
+	color: $color-secondary;
+	display: inline-block;
+	letter-spacing: 1px;
+	margin-bottom: -6px;
+	outline: none;
+	overflow: hidden;
+	padding: 15px 23px 13px;
+	position: relative;
+	text-transform: uppercase;
+	@include transition(all 0.5s $easing-swift-out);
+	z-index: 1;
+
+	&.white {
+		border-color: #fff;
+		color: #fff;
+	}
+
+	&::after {
+		background: #fff;
+		content: '';
+		height: 0;
+		left: 50%;
+		opacity: 0;
+		position: absolute;
+		top: 50%;
+		width: 200%;
+		z-index: -1;
+
+		@include transition(all 0.5s $easing-swift-out);
+		@include transform(translateX(-50%) translateY(-50%) rotate(45deg));
+	}
+
+	&:hover {
+		color: $color-secondary;
+		@include transition(all 0.5s $easing-swift-out);
+
+		&::after {
+			height: 300%;
+	  	opacity: 1;
+		}
+	}
+
+	& + .button,
+	& + button {
+		margin-left: 15px;
+
+		@media ($breakpoint-phone) {
+			margin-left: 0;
+		}
+	}
+
+	@media ($breakpoint-phone) {
+		display: block;
+		margin: 0 0 $sizing-unit;
+		width: 100%;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+}

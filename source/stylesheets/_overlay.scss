@@ -1,0 +1,20 @@
+.overlay {
+	@extend .fit;
+
+	backface-visibility: hidden;
+	background: rgba(#fff, .9);
+	opacity: 0;
+	overflow: hidden;
+	position: fixed;
+	visibility: hidden;
+	z-index: 1000;
+
+	@include animation(opacity 0.5s ease-out);
+
+	&.open {
+		opacity: 1;
+		visibility: visible;
+
+		@include animation(opacity 0.5s ease-out);
+	}
+}

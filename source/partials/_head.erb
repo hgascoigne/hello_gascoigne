@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Always force latest IE rendering engine or request Chrome Frame -->
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+
+    <!-- Use title if it's in the page YAML frontmatter -->
+    <title><%= current_page.data.title || "Hayden Gascoigne | Web Creator" %></title>
+
+    <!-- OG Meta -->
+    <meta property="og:title" content="Hayden Gascoigne | Web Creator" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://www.hellogascoigne.com/" />
+    <meta property="og:image" content="/images/profile.jpg" />
+
+    <!-- SEO -->
+    <meta name="keywords" content="web, developer, creator, angular, js, front end, full stack" />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Hayden Gascoigne" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <%= stylesheet_link_tag "normalize", "all" %>
+
+    <!-- TypeKit -->
+    <script src="//use.typekit.net/nzs4kbq.js"></script>
+	<script>try{Typekit.load();}catch(e){}</script>
+  </head>

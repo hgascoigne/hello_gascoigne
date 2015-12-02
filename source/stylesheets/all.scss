@@ -1,0 +1,146 @@
+@charset "utf-8";
+
+/*
+Title: Hello Gascoigne
+Website CSS Version: 1.0
+Website URL: http://hellogascoigne.com
+*/
+
+// IMPORTS
+// =======
+@import "bourbon/bourbon";
+@import "variables";
+@import "typography";
+@import "grid";
+@import "helper";
+@import "section";
+@import "button";
+@import "overlay";
+
+// DEFAULT STYLES
+// ==============
+*, *:after, *:before {
+	box-sizing: border-box;
+}
+
+body {
+	background: #fff;
+	color: $color-dark;
+}
+
+.row {
+	max-width: 100%;
+}
+
+/* Text Styles */
+::-moz-selection { /* Code for Firefox */
+    background: $color-secondary;
+    color: #fff;
+}
+
+::selection {
+    background: $color-secondary;
+    color: #fff;
+}
+
+.text-muted {
+	color: $color-muted !important;
+}
+
+.text-primary {
+	color: $color-primary;
+}
+
+.text-secondary {
+	color: $color-secondary;
+}
+
+.text-right {
+	text-align: right;
+}
+
+.text-small {
+	font-size: 0.5em;
+}
+
+/* Links */
+a {
+  border-bottom: 3px dashed rgba(#fff, 0.4);
+	color: #fff;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+/* Heading Subheads */
+.subhead {
+	display: block;
+	font-weight: normal;
+	letter-spacing: 1px;
+	@extend .text-small;
+}
+
+h1.hero {
+	font-size: 6em;
+	font-weight: bold;
+	text-shadow: 0px 0px 20px rgba(#000, .3);
+
+	.subhead {
+		font-size: 1.5rem;
+	}
+}
+
+/* Icon Sizes */
+.icon-sm,
+.icon-md,
+.icon-lg,
+.icon-xl {
+	line-height: 1;
+}
+
+.icon-md {
+	@include size(32px);
+	font-size: 32px;
+}
+
+.icon-lg {
+	@include size(64px);
+	font-size: 64px;
+}
+
+.icon-xl {
+	@include size(128px);
+	font-size: 128px;
+}
+
+/* Icon List */
+.icon-list {
+	.list-item + .list-item {
+		margin-left: 15px;
+	}
+
+	a {
+    border: none;
+		display: inline-block;
+    color: #fff;
+	}
+}
+
+/* Homepage Hero */
+#homepage-hero {
+	// cursor: s-resize;
+}
+
+/* Connect */
+.connect {
+  a {
+    opacity: 0.7;
+
+    @include transition(opacity 0.2s ease-in-out);
+  }
+
+  a:hover {
+    opacity: 1;
+
+    @include transition(opacity 0.2s ease-in-out);
+  }
+}

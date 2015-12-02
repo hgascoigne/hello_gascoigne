@@ -1,0 +1,24 @@
+// COLORS
+// ======
+
+//Grey
+$color-light:			#E7E8EA;
+$color-muted:			#A0A1A3;
+$color-dark:			#595855;
+
+//Color
+$color-primary:			#A32A3A;
+$color-secondary:		#4B52A4;
+$color-positive: 		#2ECC71;
+$color-negative: 		#CC0000;
+
+// OTHER
+// =====
+$sizing-unit: 			25px;
+$border-width: 			3px;
+$easing-swift-out: 		cubic-bezier(.55,0,.1,1);
+
+// BREAKPOINTS
+// ===========
+$breakpoint-phone: 		'max-width: 719px';
+$breakpoint-tablet: 	'max-width: 943px';

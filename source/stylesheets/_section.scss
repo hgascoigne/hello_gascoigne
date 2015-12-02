@@ -1,0 +1,49 @@
+/* Standard Page Section */
+.section {
+	padding: $sizing-unit*2 0;
+	position: relative;
+	width: 100%;
+
+	&.full {
+		height: 100vh;
+		padding: 0;
+	}
+
+	&.gradient {
+		color: #fff;
+		@include linear-gradient(45deg, $color-primary, $color-secondary);
+	}
+
+	&.logos {
+		overflow: hidden;
+
+		.logos-bg {
+			background: url('../images/logos_bg.png') no-repeat;
+			background-position: center;
+			min-height: 500px;
+			position: relative;
+		}
+
+		.box {
+			position: relative;
+		}
+	}
+
+	.anchor {
+		position: absolute;
+
+		&.bottom {
+			bottom: $sizing-unit;
+			width: 100%;
+		}
+
+		&.top {
+			top: $sizing-unit;
+			width: 100%;
+		}
+
+		&.right {
+			right: $sizing-unit;
+		}
+	}
+}
