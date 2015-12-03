@@ -1,0 +1,35 @@
+/* Icon Sizes */
+.icon-sm,
+.icon-md,
+.icon-lg,
+.icon-xl {
+	line-height: 1;
+}
+
+.icon-md {
+	@include size(32px);
+	font-size: 32px;
+}
+
+.icon-lg {
+	@include size(64px);
+	font-size: 64px;
+}
+
+.icon-xl {
+	@include size(128px);
+	font-size: 128px;
+}
+
+/* Icon List */
+.icon-list {
+	.list-item + .list-item {
+		margin-left: 15px;
+	}
+
+	a {
+    border: none;
+		display: inline-block;
+    color: #fff;
+	}
+}

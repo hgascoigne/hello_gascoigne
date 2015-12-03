@@ -60,6 +60,7 @@ sprockets.append_path File.join root, 'bower_components'
 #Add Components
 sprockets.import_asset 'jquery'
 sprockets.import_asset 'flexboxgrid'
+sprockets.import_asset 'animate.css/animate.min.css'
 
 # Build-specific configuration
 configure :build do

@@ -1,0 +1,35 @@
+// DEFAULT STYLES
+// ==============
+*, *:after, *:before {
+	box-sizing: border-box;
+}
+
+body {
+	background: #fff;
+	color: $color-dark;
+}
+
+.row {
+  margin: 0;
+	max-width: 100%;
+}
+
+/* Homepage Hero */
+#homepage-hero {
+  @media ($breakpoint-phone) {
+    padding: 15px;
+  }
+}
+
+/* Connect */
+.connect {
+  a {
+    opacity: 0.7;
+    @include transition(opacity 0.2s ease-in-out);
+  }
+
+  a:hover {
+    opacity: 1;
+    @include transition(opacity 0.2s ease-in-out);
+  }
+}

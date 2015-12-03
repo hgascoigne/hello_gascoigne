@@ -128,3 +128,65 @@ blockquote {
     /* 35px / 24px */
   }
 }
+
+/* Text Styles */
+::-moz-selection { /* Code for Firefox */
+    background: $color-secondary;
+    color: #fff;
+}
+
+::selection {
+    background: $color-secondary;
+    color: #fff;
+}
+
+.text-muted {
+	color: $color-muted !important;
+}
+
+.text-primary {
+	color: $color-primary;
+}
+
+.text-secondary {
+	color: $color-secondary;
+}
+
+.text-right {
+	text-align: right;
+}
+
+.text-small {
+	font-size: 0.5em;
+}
+
+/* Links */
+a {
+  border-bottom: 3px dashed rgba(#fff, 0.4);
+	color: #fff;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+/* Heading Subheads */
+.subhead {
+	display: block;
+	font-weight: normal;
+	letter-spacing: 1px;
+	@extend .text-small;
+}
+
+h1.hero {
+	font-size: 6em;
+	font-weight: bold;
+  margin-top: 0;
+	text-shadow: 0px 0px 20px rgba(#000, .3);
+
+	.subhead {
+		font-size: 0.2em;
+	}
+
+  @media ($breakpoint-phone) {
+    font-size: 4em;
+  }
+}
