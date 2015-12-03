@@ -23,7 +23,16 @@
 
 /* Icon List */
 .icon-list {
-	.list-item + .list-item {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  li {
+    display: inline-block;
+    list-style: none;
+  }
+
+	li + li {
 		margin-left: 15px;
 	}
 
